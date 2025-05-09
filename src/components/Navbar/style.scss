@@ -1,5 +1,5 @@
 .navbar {
-  width: 100vw;
+  width: 100%;
   position: fixed;
   top: 0;
   inset-inline-start: 0;
@@ -14,6 +14,11 @@
   gap: 24px;
   list-style-type: none;
   padding: 0 24px;
+
+  @media (max-width: 767px) {
+    display: flex;
+    justify-content: space-between;
+  }
 }
 
 .navbar__item {
