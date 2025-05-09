@@ -19,7 +19,7 @@ const About = () => {
       <FadeIn className="about__content">
         <div className="about__profile-container">
           <img
-            src="/profilepic.jpeg"
+            src={`${import.meta.env.BASE_URL}/profilepic.jpeg`}
             alt="Profile"
             className="about__profile-image"
           />

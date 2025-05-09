@@ -31,7 +31,7 @@ const Carousel = ({ projects }: { projects: Project[] }) => {
           <div className="carousel__project">
             <div className="carousel__image-container">
               <img
-                src={current.image}
+                src={`${import.meta.env.BASE_URL}${current.image}`}
                 alt={current.title}
                 className="carousel__image"
               />
