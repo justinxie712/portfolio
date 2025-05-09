@@ -1,0 +1,13 @@
+.main-content {
+  margin-top: 90px;
+  height: calc(100vh - 90px);
+  overflow-y: auto;
+  scroll-behavior: smooth;
+  width: 87.5%;
+  margin: 0 auto;
+}
+
+// hide scrollbar
+.main-content::-webkit-scrollbar {
+  display: none;
+}

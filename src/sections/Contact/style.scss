@@ -1,0 +1,16 @@
+@import "../../styles/mixins";
+
+.contact {
+  @include section;
+  @include footer;
+  @include anchor-target;
+
+  &__container {
+    display: flex;
+    gap: 5rem;
+  }
+
+  &__icon {
+    cursor: pointer;
+  }
+}

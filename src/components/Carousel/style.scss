@@ -1,0 +1,131 @@
+.carousel {
+  position: relative;
+  margin: 0 auto;
+  padding: 1rem;
+  width: 100%;
+
+  &__card {
+    background: #f5f5f5;
+    padding: 1rem;
+    border-radius: 1rem;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    max-height: 500px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__project {
+    display: flex;
+    gap: 1.5rem;
+    height: 100%;
+
+    @media (max-width: 768px) {
+      flex-direction: column;
+    }
+  }
+
+  &__project-details {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__image-container {
+    position: relative;
+    width: 70%;
+    height: 70%;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 33%;
+      height: 100%;
+      background: linear-gradient(to left, white, transparent);
+      z-index: 1;
+      border-top-right-radius: 0.2rem;
+      border-bottom-right-radius: 0.2rem;
+    }
+
+    @media (max-width: 768px) {
+      width: 100%;
+      height: 16rem;
+      margin-bottom: 1rem;
+    }
+  }
+
+  &__image {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    border-radius: 0.5rem;
+
+    @media (max-width: 768px) {
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+  &__title {
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+  }
+
+  &__description {
+    color: #4b5563;
+    margin-bottom: 0.5rem;
+  }
+
+  &__tech-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-bottom: 1rem;
+  }
+
+  &__tech-tag {
+    background-color: #dbeafe;
+    color: #2563eb;
+    padding: 8px;
+    border-radius: 4px;
+    font-size: 0.875rem;
+  }
+
+  &__links {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 1rem;
+  }
+
+  &__link {
+    color: #3b82f6;
+    text-decoration: none;
+    margin-top: auto;
+  }
+
+  &__nav-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: white;
+    border-radius: 50%;
+    padding: 0.5rem;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+
+    &:hover {
+      background: #f9fafb;
+    }
+
+    &--left {
+      inset-inline-start: -5rem;
+    }
+
+    &--right {
+      inset-inline-end: -5rem;
+    }
+  }
+}

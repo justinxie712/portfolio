@@ -1,0 +1,13 @@
+@import "../../styles/mixins";
+
+.home {
+  @include section;
+  @include fill-container;
+  justify-content: center;
+  text-align: center;
+}
+
+.caption {
+  font-size: 30px;
+  font-weight: 600;
+}
