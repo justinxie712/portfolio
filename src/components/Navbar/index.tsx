@@ -9,7 +9,7 @@ const Navbar: FC = () => {
       <ul className="navbar__list">
         {navItems.map((item, index) => (
           <motion.li
-            whileHover={{ color: "#00bcd4" }}
+            whileHover={{ color: "#e63900" }}
             transition={{ duration: 0.3, ease: "easeInOut" }}
             className="navbar__item"
             key={index}
