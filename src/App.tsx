@@ -7,15 +7,25 @@ import Projects from "./sections/Projects";
 
 function App() {
   return (
-    <div>
-      <Navbar />
-      <main className="main-content">
-        <Home />
-        <About />
-        <Projects />
-        <Contact />
-      </main>
-    </div>
+    <>
+      <div className="animated-bg">
+        {Array(100)
+          .fill(0)
+          .map((_, index) => (
+            <div key={index} className="shape"></div>
+          ))}
+      </div>
+
+      <div>
+        <Navbar />
+        <main className="main-content">
+          <Home />
+          <About />
+          <Projects />
+          <Contact />
+        </main>
+      </div>
+    </>
   );
 }
 

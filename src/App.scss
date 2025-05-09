@@ -11,3 +11,62 @@
 .main-content::-webkit-scrollbar {
   display: none;
 }
+
+.animated-bg {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  z-index: -1;
+  background: rgb(238, 236, 236);
+  pointer-events: none;
+
+  .shape {
+    position: absolute;
+    bottom: -50px;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    animation: float 20s linear infinite;
+    opacity: 0;
+  }
+
+  @for $i from 1 through 20 {
+    .shape:nth-child(#{$i}) {
+      left: random(100) * 1%;
+      width: random(20) + 10px;
+      height: random(20) + 10px;
+      animation-delay: random(20) * 1s;
+      animation-duration: (10 + random(10)) * 1s;
+
+      // Assign different pastel colors
+      @if $i % 5 == 0 {
+        background-color: rgba(255, 182, 193, 1); // Pastel pink
+      } @else if $i % 5 == 1 {
+        background-color: rgba(173, 216, 230, 1); // Pastel blue
+      } @else if $i % 5 == 2 {
+        background-color: rgba(152, 251, 152, 1); // Pastel green
+      } @else if $i % 5 == 3 {
+        background-color: rgba(255, 218, 185, 1); // Pastel peach
+      } @else {
+        background-color: rgba(221, 160, 221, 1); // Pastel purple
+      }
+    }
+  }
+}
+
+@keyframes float {
+  0% {
+    transform: translateY(0) scale(1);
+    opacity: 0;
+  }
+  10% {
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(-120vh) scale(0.5);
+    opacity: 0;
+  }
+}
