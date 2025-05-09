@@ -6,7 +6,7 @@ import { Project } from "../../types";
 const projects: Project[] = [
   {
     title: "Melodex",
-    image: "/melodex.png",
+    image: "melodex.png",
     summary:
       "A music data visualizer prototype that allows users to search for songs and visualize their performance metrics.",
     tech: ["React", "TypeScript", "Sass"],
@@ -15,7 +15,7 @@ const projects: Project[] = [
   },
   {
     title: "Spreadsheet",
-    image: "/spreadsheet.png",
+    image: "spreadsheet.png",
     summary:
       "A responsive spreadsheet clone with cell formatting, formula support, and data persistence capabilities.",
     tech: ["React", "JavaScript", "CSS"],
@@ -24,7 +24,7 @@ const projects: Project[] = [
   },
   {
     title: "Tic-Tac-Toe",
-    image: "/tic-tac-toe.png",
+    image: "tic-tac-toe.png",
     summary:
       "A spin on the classic game of Tic-Tac-Toe with a clean and stylish interface that is fun for all ages.",
     tech: ["React", "JavaScript", "CSS"],
