@@ -1,9 +1,12 @@
 @import "../../styles/mixins";
 
 .about {
-  @include fill-container;
   @include section;
   @include anchor-target;
+
+  @media (min-width: 768px) {
+    @include fill-container;
+  }
 
   &__content {
     display: flex;
