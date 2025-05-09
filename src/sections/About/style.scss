@@ -22,11 +22,6 @@
     border-radius: 50%;
     object-fit: cover;
     border: 3px solid #ccc;
-
-    @media (max-width: 767px) {
-      width: 150px;
-      height: 150px;
-    }
   }
 
   &__text {
@@ -39,6 +34,7 @@
     width: 30%;
     gap: 16px;
     margin-top: 20px;
+    justify-content: center;
   }
 
   &__skill-item {
@@ -63,5 +59,21 @@
     align-items: center;
     box-sizing: border-box;
     width: 100px;
+  }
+
+  @media (max-width: 767px) {
+    &__content {
+      flex-direction: column;
+    }
+
+    &__profile-image {
+      width: 150px;
+      height: 150px;
+    }
+
+    &__text {
+      width: 100%;
+      text-align: center;
+    }
   }
 }
