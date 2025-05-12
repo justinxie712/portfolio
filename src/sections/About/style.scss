@@ -68,15 +68,16 @@
     &__content {
       flex-direction: column;
     }
-
-    &__profile-image {
-      width: 150px;
-      height: 150px;
-    }
-
     &__text {
       width: 100%;
       text-align: center;
+    }
+  }
+
+  @media (max-width: 767px) {
+    &__profile-image {
+      width: 150px;
+      height: 150px;
     }
   }
 }
