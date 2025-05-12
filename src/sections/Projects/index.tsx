@@ -8,7 +8,7 @@ const projects: Project[] = [
     title: "Melodex",
     image: "melodex.png",
     summary:
-      "A music data visualizer prototype that allows users to search for songs and visualize their performance metrics.",
+      "A music data visualizer prototype that allows users view performance metrics for selected songs.",
     tech: ["React", "TypeScript", "Sass"],
     demo_url: "https://justinxie712.github.io/melodex-app/",
     source_url: "https://github.com/justinxie712/melodex-app",

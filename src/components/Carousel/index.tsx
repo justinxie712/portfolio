@@ -18,7 +18,7 @@ const Carousel = ({ projects }: { projects: Project[] }) => {
   const current = projects[index];
 
   return (
-    <div className="carousel">
+    <div className="carousel" role="region" aria-label="Project carousel">
       <AnimatePresence mode="wait">
         <motion.div
           key={index}
@@ -68,21 +68,29 @@ const Carousel = ({ projects }: { projects: Project[] }) => {
           </div>
         </motion.div>
       </AnimatePresence>
-
-      <button
-        onClick={handlePrev}
-        className="carousel__nav-button carousel__nav-button--left"
-        aria-label="Previous"
-      >
-        <MdChevronLeft size={24} />
-      </button>
-      <button
-        onClick={handleNext}
-        className="carousel__nav-button carousel__nav-button--right"
-        aria-label="Next"
-      >
-        <MdChevronRight size={24} />
-      </button>
+      <div className="carousel__nav">
+        <button
+          onClick={handlePrev}
+          className="carousel__nav-button"
+          aria-label="Previous project"
+          type="button"
+        >
+          <MdChevronLeft size={24} aria-hidden="true" />
+        </button>
+        <div className="carousel__status" aria-live="polite">
+          <span className="visually-hidden">
+            {`Project ${index + 1} of ${projects.length}`}
+          </span>
+        </div>
+        <button
+          onClick={handleNext}
+          className="carousel__nav-button"
+          aria-label="Next project"
+          type="button"
+        >
+          <MdChevronRight size={24} aria-hidden="true" />
+        </button>
+      </div>
     </div>
   );
 };
