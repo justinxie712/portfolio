@@ -4,7 +4,7 @@
   @include section;
   @include anchor-target;
 
-  @media (min-width: 768px) {
+  @media (min-width: 1025px) {
     @include fill-container;
   }
 
@@ -64,7 +64,7 @@
     width: 100px;
   }
 
-  @media (max-width: 767px) {
+  @media (max-width: 1024px) {
     &__content {
       flex-direction: column;
     }
