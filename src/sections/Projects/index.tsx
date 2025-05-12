@@ -2,6 +2,7 @@ import FadeIn from "../../components/Animations/FadeIn";
 import Carousel from "../../components/Carousel";
 import "./style.scss";
 import { Project } from "../../types";
+import { useEffect } from "react";
 
 const projects: Project[] = [
   {
@@ -33,7 +34,22 @@ const projects: Project[] = [
   },
 ];
 
+const preloadImage = (src: string) => {
+  const img = new Image();
+  img.src = src;
+};
+
+const imagePaths: string[] = [
+  "melodex.png",
+  "spreadsheet.png",
+  "tic-tac-toe.png",
+];
+
 const Projects = () => {
+  useEffect(() => {
+    imagePaths.forEach(preloadImage);
+  }, []);
+
   return (
     <section id="projects" className="projects">
       <h1 className="projects__title">Projects</h1>
