@@ -9,7 +9,7 @@ const projects: Project[] = [
     title: "Melodex",
     image: "melodex.png",
     summary:
-      "A music data visualizer prototype that allows users view performance metrics for selected songs.",
+      "A music data visualizer prototype that allows users to view performance metrics for selected songs.",
     tech: ["React", "TypeScript", "Sass"],
     demo_url: "https://justinxie712.github.io/melodex-app/",
     source_url: "https://github.com/justinxie712/melodex-app",
@@ -18,7 +18,7 @@ const projects: Project[] = [
     title: "Spreadsheet",
     image: "spreadsheet.png",
     summary:
-      "A responsive spreadsheet clone with cell formatting, formula support, and data persistence capabilities.",
+      "A spreadsheet clone with support for a few common formula functions (SUM, AVERAGE, COUNT). ",
     tech: ["React", "JavaScript", "CSS"],
     demo_url: "https://2195298.playcode.io",
     source_url: "https://playcode.io/2195298",

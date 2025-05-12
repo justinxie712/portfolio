@@ -5,7 +5,6 @@
 
   &__card {
     background: #f9f9f9;
-    padding: 1rem;
     border-radius: 1rem;
     border: 2px solid #d2cfcf;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
@@ -126,7 +125,6 @@
     &__project-details {
       justify-content: center;
       align-items: center;
-      padding: 0.5rem;
     }
 
     &__image-container {
