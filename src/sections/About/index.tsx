@@ -6,11 +6,11 @@ import { SiJavascript, SiTypescript } from "react-icons/si";
 const About = () => {
   const skills = [
     { icon: <FaReact size={50} />, name: "React" },
+    { icon: <SiJavascript size={50} />, name: "JavaScript" },
+    { icon: <SiTypescript size={50} />, name: "TypeScript" },
     { icon: <FaSass size={50} />, name: "Sass" },
     { icon: <FaHtml5 size={50} />, name: "HTML" },
     { icon: <FaCss3Alt size={50} />, name: "CSS" },
-    { icon: <SiJavascript size={50} />, name: "JavaScript" },
-    { icon: <SiTypescript size={50} />, name: "TypeScript" },
   ];
 
   return (

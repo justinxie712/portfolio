@@ -20,11 +20,9 @@ const Contact = () => {
           </a>
         </HoverExpand>
         <HoverExpand>
-          <SiGmail
-            className="contact__icon"
-            size={40}
-            onClick={handleEmailClick}
-          />
+          <a href="#" onClick={handleEmailClick}>
+            <SiGmail className="contact__icon" size={40} />
+          </a>
         </HoverExpand>
         <HoverExpand>
           <a href="https://www.linkedin.com/in/justin-xie712/" target="_blank">
