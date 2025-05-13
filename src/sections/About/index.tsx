@@ -25,7 +25,7 @@ const About = () => {
           />
         </div>
         <div className="about__text">
-          <p>{`Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam in dui mauris. Vivamus hendrerit arcu sed erat molestie vehicula. Sed auctor neque eu tellus rhoncus ut eleifend nibh porttitor. Ut in nulla enim. Phasellus molestie magna non est bibendum non venenatis nisl tempor. Suspendisse dictum feugiat nisl ut dapibus. Mauris iaculis porttitor posuere. Praesent id metus massa, ut blandit odio.`}</p>
+          <p>{`I'm a front-end developer who loves to learn and build things that look great and feel smooth to use. I specialize in React and TypeScript/JavaScript, and I’m always looking for ways to make the web a little faster, a little cleaner, and a lot more user-friendly and accessible. When I’m not glued to my laptop, I’m probably at the gym, exploring a new city, dancing with friends at a concert, or at a golf course somewhere.`}</p>
         </div>
         <div className="about__skills-grid">
           {skills.map((skill, index) => (
