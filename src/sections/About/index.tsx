@@ -1,10 +1,12 @@
+import { FC } from "react";
 import FadeIn from "../../components/Animations/FadeIn";
 import "./style.scss";
 import { FaReact, FaSass, FaHtml5, FaCss3Alt } from "react-icons/fa";
 import { SiJavascript, SiTypescript } from "react-icons/si";
+import { Skill } from "../../types";
 
-const About = () => {
-  const skills = [
+const About: FC = () => {
+  const skills: Skill[] = [
     { icon: <FaReact size={50} />, name: "React" },
     { icon: <SiJavascript size={50} />, name: "JavaScript" },
     { icon: <SiTypescript size={50} />, name: "TypeScript" },

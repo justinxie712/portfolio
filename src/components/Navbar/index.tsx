@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 import "./style.scss";
 
 const Navbar: FC = () => {
-  const navItems = ["Home", "About", "Projects", "Contact"];
+  const navItems: string[] = ["Home", "About", "Projects", "Contact"];
   return (
     <nav className="navbar">
       <ul className="navbar__list">

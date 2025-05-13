@@ -2,7 +2,7 @@ import FadeIn from "../../components/Animations/FadeIn";
 import Carousel from "../../components/Carousel";
 import "./style.scss";
 import { Project } from "../../types";
-import { useEffect } from "react";
+import { FC, useEffect } from "react";
 
 const projects: Project[] = [
   {
@@ -45,7 +45,7 @@ const imagePaths: string[] = [
   "tic-tac-toe.png",
 ];
 
-const Projects = () => {
+const Projects: FC = () => {
   useEffect(() => {
     imagePaths.forEach(preloadImage);
   }, []);

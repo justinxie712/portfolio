@@ -6,3 +6,7 @@ export interface Project {
   demo_url: string;
   source_url: string;
 }
+
+export interface CarouselProps {
+  projects: Project[];
+}

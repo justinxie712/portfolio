@@ -1,10 +1,10 @@
-import { useState } from "react";
+import { FC, useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { MdChevronLeft, MdChevronRight } from "react-icons/md";
 import "./style.scss";
-import { Project } from "../../types";
+import { CarouselProps } from "../../types";
 
-const Carousel = ({ projects }: { projects: Project[] }) => {
+const Carousel: FC<CarouselProps> = ({ projects }) => {
   const [index, setIndex] = useState<number>(0);
 
   const handlePrev = () => {
