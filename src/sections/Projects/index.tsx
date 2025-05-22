@@ -7,19 +7,18 @@ import { FC, useEffect } from "react";
 const projects: Project[] = [
   {
     title: "Melodex",
-    image: "melodex.png",
+    image: "melodex-app.png",
     summary:
-      "A music data visualizer prototype that allows users to view performance metrics for selected songs.",
+      "Integrating Spotify's API, users can view a variety of audio metrics for selected songs.",
     tech: ["React", "TypeScript", "Sass"],
-    demo_url: "https://justinxie712.github.io/melodex-app/",
-    source_url: "https://github.com/justinxie712/melodex-app",
+    source_url: "https://github.com/justinxie712/melodex-main",
   },
   {
     title: "Spreadsheet",
     image: "spreadsheet.png",
     summary:
       "A spreadsheet clone with support for a few common formula functions (SUM, AVERAGE, COUNT). ",
-    tech: ["React", "JavaScript", "CSS"],
+    tech: ["React", "JavaScript", "Sass"],
     demo_url: "https://2195298.playcode.io",
     source_url: "https://playcode.io/2195298",
   },
@@ -28,7 +27,7 @@ const projects: Project[] = [
     image: "tic-tac-toe.png",
     summary:
       "A spin on the classic game of Tic-Tac-Toe with a clean and stylish interface that is fun for all ages.",
-    tech: ["React", "JavaScript", "CSS"],
+    tech: ["React", "JavaScript", "Sass"],
     demo_url: "https://2211631.playcode.io/",
     source_url: "https://playcode.io/2211631",
   },

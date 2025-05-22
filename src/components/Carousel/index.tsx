@@ -47,22 +47,26 @@ const Carousel: FC<CarouselProps> = ({ projects }) => {
                 ))}
               </div>
               <div className="carousel__links">
-                <a
-                  href={current.source_url}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="carousel__link"
-                >
-                  View Source
-                </a>
-                <a
-                  href={current.demo_url}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="carousel__link"
-                >
-                  Live Demo
-                </a>
+                {current.source_url && (
+                  <a
+                    href={current.source_url}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="carousel__link"
+                  >
+                    View Source
+                  </a>
+                )}
+                {current.demo_url && (
+                  <a
+                    href={current.demo_url}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="carousel__link"
+                  >
+                    Live Demo
+                  </a>
+                )}
               </div>
             </div>
           </div>
