@@ -28,6 +28,14 @@ const About: FC = () => {
         </div>
         <div className="about__text">
           <p>{`I'm a front-end developer who loves to learn and build things that look great and feel smooth to use. I specialize in React and TypeScript/JavaScript, and I’m always looking for ways to make the web a little faster, a little cleaner, and a lot more user-friendly and accessible. When I’m not glued to my laptop, I’m probably at the gym, exploring a new city, dancing with friends at a concert, or at a golf course somewhere.`}</p>
+          <a
+            href="/portfolio/Curriculum Vitae - Justin Xie.pdf"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="resume-link"
+          >
+            View My Resume
+          </a>
         </div>
         <div className="about__skills-grid">
           {skills.map((skill, index) => (

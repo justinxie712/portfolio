@@ -8,6 +8,29 @@
     @include fill-container;
   }
 
+  .resume-link {
+    float: inline-end;
+    padding: 0.75rem 1.5rem;
+    background: linear-gradient(135deg, #4f46e5, #6366f1); // Indigo gradient
+    color: #ffffff;
+    text-decoration: none;
+    border-radius: 0.5rem;
+    font-weight: 600;
+    font-size: 1rem;
+    box-shadow: 0 4px 14px rgba(79, 70, 229, 0.25);
+    transition: all 0.3s ease;
+
+    &:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 6px 20px rgba(99, 102, 241, 0.35);
+    }
+
+    &:active {
+      transform: translateY(0);
+      box-shadow: 0 3px 10px rgba(99, 102, 241, 0.2);
+    }
+  }
+
   &__content {
     display: flex;
     align-items: center;
@@ -29,6 +52,11 @@
 
   &__text {
     width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 1rem;
   }
 
   &__skills-grid {
