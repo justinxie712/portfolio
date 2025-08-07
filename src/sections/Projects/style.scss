@@ -5,12 +5,7 @@
   @include section;
   @include anchor-target;
 
-  &__title {
-    // title styling if needed
-  }
-
   &__content {
-    width: 80%;
     box-sizing: border-box;
   }
 }

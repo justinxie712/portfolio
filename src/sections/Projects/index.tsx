@@ -14,6 +14,14 @@ const projects: Project[] = [
     source_url: "https://github.com/justinxie712/melodex-main",
   },
   {
+    title: "My Diary App",
+    image: "my-diary.png",
+    summary:
+      "Full Stack app where users can write and save personal diary entries ",
+    tech: ["React", "NodeJS", "MongoDB"],
+    source_url: "https://github.com/justinxie712/melodex-main",
+  },
+  {
     title: "Spreadsheet",
     image: "spreadsheet.png",
     summary:
